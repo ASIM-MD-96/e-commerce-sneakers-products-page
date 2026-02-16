@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.addtocarticon {
+  filter: brightness(20%) saturate(100%);
+}
+
+.closebtn:hover {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(97%) saturate(749%)
+    hue-rotate(346deg) brightness(101%) contrast(101%);
+}
+
+.open {
+  @apply hidden;
+}
+
+.slider {
+  @apply transition-transform ease-linear duration-300;
+}
+
+.thumb__opacity {
+  @apply opacity-50;
+}
+
+.active {
+  @apply ring-2 ring-orange opacity-40;
+}
+
+.nextbtn,
+.previousbtn {
+  filter: brightness(0);
+  transition: filter 0.3s ease;
+  @apply cursor-pointer;
+}
+
+.nextbtn:hover,
+.previousbtn:hover {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(97%) saturate(749%)
+    hue-rotate(346deg) brightness(101%) contrast(101%);
+}
+
+.slide__mobile {
+  @apply absolute top-0 flex items-center justify-center transform transition-all duration-500 ease-in-out;
+}
+
+.nav__link {
+  @apply transform transition duration-500 ease-in-out;
+}
